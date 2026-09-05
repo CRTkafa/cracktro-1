@@ -1,0 +1,47 @@
+{
+  "artifact": "CRTkafa-cracktro-01-fasttracker-authentic-4K.mp4",
+  "sha256": "613CFFA42F68D2C02549110021BE92F04562501D997E9B53357F8B6B821EDD88",
+  "bytes": 109497677,
+  "duration_seconds": 181.55,
+  "video": {
+    "codec": "h264",
+    "profile": "High 4:4:4 Predictive",
+    "width": 3840,
+    "height": 2160,
+    "pixel_format": "yuv444p",
+    "fps": 60
+  },
+  "audio": {
+    "source": "ft2-sb16.wav from the same 86Box session",
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "fixed_gain_db": 15,
+    "mean_dbfs": -21.3,
+    "peak_dbfs": -4.3,
+    "external_soundtrack": false
+  },
+  "timeline": {
+    "raw_song_start_seconds": 83.42,
+    "raw_song_end_seconds": 256.79,
+    "last_verified_pre_loop_seconds": 256.79,
+    "observed_loop_transition_window_seconds": [256.84, 256.85],
+    "last_visible_order": "2F",
+    "loop_visible": false
+  },
+  "verification": {
+    "xm_tests_passed": 11,
+    "full_video_audio_decode": "passed",
+    "sampled_frames": [
+      "BIOS",
+      "DOS branding",
+      "loaded song",
+      "mid-song",
+      "solo",
+      "final order",
+      "fade-out"
+    ],
+    "host_or_emulator_chrome_visible": false,
+    "privacy_scan": "passed"
+  }
+}

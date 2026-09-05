@@ -16,3 +16,15 @@ gputest.txt
 export-provenance.json
 delivery.json
 qa/
+
+# ---- tracker companion: local-only inputs --------------------------------
+# The XM was captured by running genuine MS-DOS 6.22 and FastTracker II 2.08
+# inside 86Box. Those binaries, the boot images and the ~6 GB raw capture are
+# proprietary or machine-local and must never be committed here. *.mp4 and
+# *.wav above already cover the renders; these cover the rest.
+tracker/dos/
+tracker/capture/
+*.IMG
+*.img
+*.mkv
+86box.cfg
