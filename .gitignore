@@ -1,0 +1,8 @@
+*.exe
+*.zip
+*.mp4
+*.wav
+*.obj
+.omc/
+.claude/
+.codex/

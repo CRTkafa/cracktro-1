@@ -1,0 +1,19 @@
+CRTkafa / Direct3D 11 demo
+
+Run CRTkafa.exe. No companion assets or audio files are needed.
+Windows 10/11 x64. Hardware feature level 11.0, or Windows WARP fallback.
+
+F     Fullscreen / windowed (starts fullscreen)
+ESC   Quit immediately
+G     Cycle flash intensity: reduced / disabled / full
+
+Losing focus or dragging/resizing pauses the picture and sound together.
+The 2:54 sequence fades to silence and exits instead of replaying the intro.
+
+This demo contains flashing lights and moving high-contrast patterns.
+The offline flash check is not a medical safety certification.
+
+Model attribution is in CREDITS.md; retain it when redistributing.
+
+Developer verification used silent offline rendering and complete MP4 decoding.
+Interactive window/audio playback was not launched automatically.
