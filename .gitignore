@@ -6,3 +6,13 @@
 .omc/
 .claude/
 .codex/
+*.pdb
+*.ilk
+*.bmp
+__pycache__/
+fx/out/
+shaders.h
+gputest.txt
+export-provenance.json
+delivery.json
+qa/

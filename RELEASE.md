@@ -1,6 +1,6 @@
 # crtkafa, cracktro #1
 
-2:54. Windows x64. One executable.
+Windows x64. One executable.
 
 Download **CRTkafa.exe** directly; no ZIP or installation needed.
 

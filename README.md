@@ -2,7 +2,7 @@
 
 ![CRTkafa inside the spiral](assets/cover.jpg)
 
-**2:54 · Windows x64 · Direct3D 11**
+**Windows x64 · Direct3D 11**
 
 A standalone real-time demo. The music is synthesized as it runs;
 shaders and model data are embedded in the executable.
@@ -37,13 +37,41 @@ Release downloads are separate files, not a ZIP:
 - **RUNME.txt** — controls, requirements and playback notes.
 - **CREDITS.md** — model creators, licenses and modifications.
 
-This repository contains release documentation. Source code is not included.
+The C engine, HLSL shaders, synthesizer, score and baked model data are included.
 Model data comes from the creators listed in [CREDITS.md](CREDITS.md);
 please retain their attribution when redistributing.
 
 Release checks cover silent rendering, audio measurements and complete video
 decoding. Interactive window/audio playback and a listening-based mix review
 have not been verified.
+
+## Build
+
+Install Visual Studio with the **Desktop development with C++** workload and
+a Windows SDK containing `fxc.exe`. Python 3 is needed only for score tools
+and tests; video export also needs FFmpeg on `PATH`.
+
+The build script checks the default Community-edition paths for Visual Studio
+2022 and Visual Studio 18. For another edition or install location, update the
+`VS` path near the top of `buildgfx.bat`.
+
+```bat
+buildgfx.bat
+```
+
+This compiles the shaders and produces `CRTkafa.exe`. Generated shader headers
+are build outputs, not checked-in source. No downloaded models are needed to
+build: the converted mesh tables are already included.
+
+```bat
+python -m unittest discover -s tools -p "test_*.py"
+python tools/export_song.py --check
+buildgfx.bat offline
+```
+
+`gfxoffline.exe` runs silent graphics tests and writes diagnostic frames.
+`makevideo_gpu.bat` builds the video renderer and exports without playback.
+The optional `tools/audio_audit.py` analyzer needs NumPy.
 
 ---
 

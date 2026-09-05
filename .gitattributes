@@ -1,0 +1,11 @@
+* text=auto
+*.c text eol=lf
+*.h text eol=lf
+*.hlsl text eol=lf
+*.hlsli text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+*.txt text eol=crlf
+*.nfo text eol=crlf
+*.jpg binary
